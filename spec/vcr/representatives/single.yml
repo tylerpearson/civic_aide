@@ -1,0 +1,106 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.googleapis.com/civicinfo/us_v1/representatives/lookup?includeOffices=true&key=AIzaSyDWJSisG_4Azd6nVJTU5gdKPiKKTCovupY&prettyPrint=false
+    body:
+      encoding: UTF-8
+      string: '{"address":"320 E Chapel Hill St, Durham NC, 27701"}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - CivicAide Ruby gem v0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Date:
+      - Sat, 28 Dec 2013 06:45:05 GMT
+      Etag:
+      - '"AkiRpOnd7sKoopyUaI9w1UXzdBI/uUqEGRPWFFqmpcAIIuYHjnGWvh8"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"kind":"civicinfo#representativeInfoResponse","status":"success","normalizedInput":{"line1":"320
+        e chapel hill st","city":"durham","state":"NC","zip":"27701"},"divisions":{"ocd-division/country:us/state:nc/county:durham":{"name":"Durham
+        County","scope":"countywide","officeIds":["O0","O1","O2","O3","O4"]},"ocd-division/country:us/state:nc/place:durham":{"name":"Durham
+        city","scope":"citywide"},"ocd-division/country:us/state:nc":{"name":"North
+        Carolina","scope":"statewide","officeIds":["O5","O6","O7","O8","O9","Oa","Ob","Oc","Od","Oe","Of"]},"ocd-division/country:us/state:nc/cd:1":{"name":"North
+        Carolina''s 1st congressional district","scope":"congressional","officeIds":["O10"]},"ocd-division/country:us":{"name":"United
+        States","scope":"national","officeIds":["O11","O12"]}},"offices":{"O0":{"name":"Sheriff","level":"county","officialIds":["P0"]},"O1":{"name":"Clerk
+        of Courts","level":"county","officialIds":["P1"]},"O2":{"name":"County Commission","level":"county","officialIds":["P2","P3","P4","P5","P6"]},"O3":{"name":"District
+        Attorney","level":"county","officialIds":["P7"]},"O4":{"name":"Register of
+        Deeds","level":"county","officialIds":["P8"]},"O5":{"name":"Governor","level":"state","officialIds":["P9"]},"O6":{"name":"State
+        Auditor","level":"state","officialIds":["P10"]},"O7":{"name":"State Treasurer","level":"state","officialIds":["P11"]},"O8":{"name":"Attorney
+        General","level":"state","officialIds":["P12"]},"O9":{"name":"Secretary of
+        State","level":"state","officialIds":["P13"]},"Oa":{"name":"Lieutenant Governor","level":"state","officialIds":["P14"]},"Ob":{"name":"United
+        States Senate","level":"federal","officialIds":["P15","P16"]},"Oc":{"name":"Commissioner
+        of Labor","level":"state","officialIds":["P17"]},"Od":{"name":"Insurance Commissioner","level":"state","officialIds":["P18"]},"Oe":{"name":"Commissioner
+        of Agriculture","level":"state","officialIds":["P19"]},"Of":{"name":"Superintendent
+        of Public Instruction","level":"state","officialIds":["P20"]},"O10":{"name":"United
+        States House of Representatives NC-01","level":"federal","officialIds":["P21"]},"O11":{"name":"President","level":"federal","officialIds":["P22"]},"O12":{"name":"Vice
+        President","level":"federal","officialIds":["P23"]}},"officials":{"P0":{"name":"Michael
+        Andrews","party":"Unknown","urls":["http://dconc.gov/index.aspx?page=475"]},"P1":{"name":"Archie
+        L. Smith III","party":"Unknown","urls":["http://www.nccourts.org/County/Durham/Staff/Clerk.asp"]},"P2":{"name":"Brenda
+        Howerton","party":"Unknown","urls":["http://dconc.gov/index.aspx?page=52"]},"P3":{"name":"Michael
+        Page","party":"Unknown","urls":["http://dconc.gov/index.aspx?page=52"]},"P4":{"name":"Wendy
+        Jacobs","party":"Unknown","urls":["http://dconc.gov/index.aspx?page=52"]},"P5":{"name":"Fred
+        Foster, Jr.","party":"Unknown","urls":["http://dconc.gov/index.aspx?page=52"]},"P6":{"name":"Ellen
+        Reckhow","party":"Unknown","urls":["http://dconc.gov/index.aspx?page=52"]},"P7":{"name":"Leon
+        Stanback","party":"Unknown","urls":["http://www.nccourts.org/County/Durham/Staff/DistrictAttorney.asp"]},"P8":{"name":"Willie
+        Covington","party":"Unknown","urls":["http://dconc.gov/index.aspx?page=455"]},"P9":{"name":"Pat
+        McCrory","address":[{"line1":"Office of the Governor 20301 Mail Service Center","city":"raleigh","state":"NC","zip":"27699"}],"party":"Republican","phones":["(919)
+        814-2000"],"urls":["http://www.governor.nc.gov/"],"photoUrl":"http://www.governor.state.nc.us/sites/all/themes/govpat/images/GovPatMcCrory.jpg","channels":[{"type":"Facebook","id":"GovernorPat"},{"type":"Twitter","id":"PatMcCroryNC"}]},"P10":{"name":"Beth
+        Wood","address":[{"line1":"NC Office of the State Auditor 20601 Mail Service
+        Center","city":"raleigh","state":"NC","zip":"27699"}],"phones":["(919) 807-7526"],"urls":["http://www.ncauditor.net/pub4/Default.aspx"],"emails":["Beth_Wood@ncauditor.net"]},"P11":{"name":"Janet
+        Cowell","address":[{"line1":"Department of State Treasurer","line2":"325 n.
+        salisbury street","city":"raleigh","state":"NC","zip":"27603"}],"phones":["(919)
+        508-5176"],"urls":["https://www.nctreasurer.com/Pages/default.aspx"],"channels":[{"type":"Facebook","id":"NCDST"}]},"P12":{"name":"Roy
+        Cooper","address":[{"line1":"9001 Mail Service Center","city":"raleigh","state":"NC","zip":"27699"}],"phones":["(919)
+        716-6400"],"urls":["http://www.ncdoj.gov/"],"channels":[{"type":"Facebook","id":"157759274279900"},{"type":"Twitter","id":"NCAGO"}]},"P13":{"name":"Elaine
+        Marshall","address":[{"line1":"NC Secretary of State PO Box 29622","city":"raleigh","state":"NC","zip":"27626"}],"phones":["(919)
+        807-2000"],"urls":["http://www.sosnc.com/"]},"P14":{"name":"Dan Forest","address":[{"line1":"20401
+        Mail Service Center","city":"raleigh","state":"NC","zip":"27699"}],"party":"Republican","phones":["(919)
+        733-7350"],"urls":["http://www.ltgov.state.nc.us/"],"emails":["lt.gov@nc.gov"],"channels":[{"type":"Facebook","id":"DanForestNC"},{"type":"Twitter","id":"DanForestNC"}]},"P15":{"name":"Kay
+        R. Hagan","address":[{"line1":"521 Dirksen Senate Office Building","city":"washington","state":"DC","zip":"20510"}],"party":"Democratic","phones":["(202)
+        224-6342"],"urls":["http://www.hagan.senate.gov/"],"photoUrl":"http://www.senate.gov/general/resources/graphic/medium/Hagan_200.jpg","emails":["Senator_Hagan@hagan.senate.gov"],"channels":[{"type":"Facebook","id":"SenatorHagan"},{"type":"Twitter","id":"SenatorHagan"},{"type":"YouTube","id":"SenatorHagan"}]},"P16":{"name":"Richard
+        Burr","address":[{"line1":"217 Russell Senate Office Building","city":"washington","state":"DC","zip":"20510"}],"party":"Republican","phones":["(202)
+        224-3154"],"urls":["http://www.burr.senate.gov/public/"],"photoUrl":"http://bioguide.congress.gov/bioguide/photo/B/B001135.jpg","channels":[{"type":"Facebook","id":"SenatorRichardBurr"},{"type":"Twitter","id":"senatorburr"},{"type":"YouTube","id":"SenatorRichardBurr"}]},"P17":{"name":"Cherie
+        Berry","address":[{"line1":"NC Department of Labor 1101 Mail Service Center","city":"raleigh","state":"NC","zip":"27699"}],"phones":["(919)
+        807-2796"],"urls":["http://www.nclabor.com/"],"emails":["Commissioners.Office@labor.nc.gov"]},"P18":{"name":"Wayne
+        Goodwin","urls":["http://www.ncdoi.com/"],"emails":["Commissioner@ncdoi.gov"],"channels":[{"type":"Facebook","id":"ncdoi"},{"type":"Twitter","id":"NCInsuranceDept"}]},"P19":{"name":"Steve
+        Troxler","address":[{"line1":"1001 Mail Service Center","city":"raleigh","state":"NC","zip":"27699"}],"phones":["(919)
+        707-3021"],"urls":["http://www.ncagr.gov/"]},"P20":{"name":"June Atkinson","address":[{"line1":"Office
+        of the State Superintendent NC Education Building 6301 Mail Service Center","city":"raleigh","state":"NC","zip":"27699"}],"phones":["(919)
+        807-3430"],"urls":["http://www.ncpublicschools.org/statesuperintendent/"],"emails":["june.atkinson@dpi.nc.gov"]},"P21":{"name":"G.K.
+        Butterfield","address":[{"line1":"2305 Rayburn HOB","city":"washington","state":"DC","zip":"20515"}],"party":"Democratic","phones":["(202)
+        225-3101"],"urls":["http://butterfield.house.gov/"],"photoUrl":"http://butterfield.house.gov/images/user_images/GKB_Official_Photo.JPG","channels":[{"type":"Facebook","id":"congressmangkbutterfield"},{"type":"Twitter","id":"gkbutterfield"},{"type":"YouTube","id":"GKBNC01"}]},"P22":{"name":"Barack
+        Hussein Obama II","address":[{"line1":"The White House","line2":"1600 Pennsylvania
+        Avenue NW","line3":"","city":"Washington","state":"DC","zip":"20500"}],"party":"Democrat","phones":["(202)
+        456-1111","(202) 456-1414"],"urls":["http://www.whitehouse.gov/administration/president_obama/","http://www.barackobama.com/index.php"],"photoUrl":"http://www.whitehouse.gov/sites/default/files/imagecache/admin_official_lowres/administration-official/ao_image/president_official_portrait_hires.jpg","channels":[{"type":"GooglePlus","id":"110031535020051778989"},{"type":"YouTube","id":"barackobama"},{"type":"Twitter","id":"barackobama"},{"type":"Facebook","id":"barackobama"}]},"P23":{"name":"Joseph
+        (Joe) Robinette Biden Jr.","address":[{"line1":"The White House","line2":"1600
+        Pennsylvania Avenue NW","line3":"","city":"Washington","state":"DC","zip":"20500"}],"party":"Democrat","urls":["http://www.whitehouse.gov/administration/vice-president-biden"],"photoUrl":"http://www.whitehouse.gov/sites/default/files/imagecache/admin_official_lowres/administration-official/ao_image/vp_portrait.jpeg","channels":[{"type":"Twitter","id":"JoeBiden"},{"type":"Facebook","id":"joebiden"},{"type":"Twitter","id":"VP"}]}}}'
+    http_version:
+  recorded_at: Sat, 28 Dec 2013 06:45:05 GMT
+recorded_with: VCR 2.5.0
