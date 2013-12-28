@@ -1,5 +1,8 @@
 # CivicAide
 
+[![Gem Version](https://badge.fury.io/rb/civic_aide.png)](http://badge.fury.io/rb/civic_aide)
+[![Build Status](https://travis-ci.org/tylerpearson/civic_aide.png?branch=master)](https://travis-ci.org/tylerpearson/civic_aide)
+
 A (unofficial) Ruby wrapper to interact with the [Google Civic Information API](https://developers.google.com/civic-information/).
 
 Currently the API only provides information for the United States.
