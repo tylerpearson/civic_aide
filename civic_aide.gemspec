@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["ty.pearson@gmail.com"]
   spec.description   = %q{A Ruby wrapper for the Google Civic Information API}
   spec.summary       = %q{A Ruby wrapper for the Google Civic Information API}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/tylerpearson/civic_aide"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
