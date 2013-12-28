@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = CivicAide::VERSION
   spec.authors       = ["Tyler Pearson"]
   spec.email         = ["ty.pearson@gmail.com"]
-  spec.description   = %q{A Ruby wrapper for the Google Civic Information API}
   spec.summary       = %q{A Ruby wrapper for the Google Civic Information API}
+  spec.description   = spec.summary
   spec.homepage      = "https://github.com/tylerpearson/civic_aide"
   spec.license       = "MIT"
 
