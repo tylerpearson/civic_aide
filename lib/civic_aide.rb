@@ -28,6 +28,7 @@ module CivicAide
 
     delegate [
       :elections,
+      :election,
       :representatives
     ] => :client
 

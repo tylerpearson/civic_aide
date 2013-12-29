@@ -26,6 +26,12 @@ describe CivicAide do
     end
   end
 
+  describe ".election" do
+    it "should include elections" do
+      expect(CivicAide).to respond_to(:election)
+    end
+  end
+
   describe ".official_only" do
     it "should default to false" do
       expect(CivicAide.official_only).to eq(false)

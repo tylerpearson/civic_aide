@@ -121,10 +121,10 @@ client.elections.all
 
 #### Find election info by address
 
-After finding the id for the election you want, pass the election id and the voter's registered address.
+After finding the id for the election you want, pass the election id and the voter's registered address. `election` is an alias for `elections`.
 
 ```ruby
-client.elections(4015).at('4910 Willet Drive, Annandale, VA 22003')
+client.election(4015).at('4910 Willet Drive, Annandale, VA 22003')
 ```
 
 ##### Sample Response

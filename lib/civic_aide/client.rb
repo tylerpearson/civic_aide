@@ -39,6 +39,7 @@ module CivicAide
     def elections(election_id=nil)
       CivicAide::Elections.new(self, election_id)
     end
+    alias :election :elections
 
     def representatives
       CivicAide::Representatives.new(self)
