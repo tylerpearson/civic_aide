@@ -42,11 +42,11 @@ google_api_key = `ABCaSyD5aMsdmaXxHc7aiUyYuVXtCICV-y_PWnf5w`
 client = CivicAide::Client.new(google_api_key)
 ```
 
-Alternatively, the API key can be set with global configuration.
+Alternatively, the API key can be set with global configuration and the resources can be accessed directly.
 
 ```ruby
 CivicAide.api_key = "ABCaSyD5aMsdmaXxHc7aiUyYuVXtCICV-y_PWnf5w"
-client = CivicAide::Client.new
+CivicAide.elections.all
 ```
 
 ## Resources
