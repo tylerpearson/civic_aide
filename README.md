@@ -65,7 +65,9 @@ client.official_sources = true
 
 To fetch a list of all available elections and their ids.
 
-`client.elections.all`
+```ruby
+client.elections.all
+```
 
 ##### Sample response
 
@@ -121,7 +123,9 @@ To fetch a list of all available elections and their ids.
 
 After finding the id for the election you want, pass the election id and the voter's registered address.
 
-`client.elections(4015).at('4910 Willet Drive, Annandale, VA 22003')`
+```ruby
+client.elections(4015).at('4910 Willet Drive, Annandale, VA 22003')
+```
 
 ##### Sample Response
 
@@ -259,7 +263,9 @@ After finding the id for the election you want, pass the election id and the vot
 
 Retrieve political geography and representative information based on an address.
 
-`client.representatives.at('118 E. Main St. Carrboro, NC 27510')`
+```ruby
+client.representatives.at('118 E. Main St. Carrboro, NC 27510')
+```
 
 ##### Response (shortened some to save space)
 
