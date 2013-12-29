@@ -14,10 +14,12 @@ module CivicAide
     headers  "User-Agent" => "CivicAide Ruby gem v#{CivicAide::VERSION}".freeze
 
     attr_reader :api_key
+    attr_accessor :official_only
 
-    def initialize(api_key=nil)
-      @api_key = api_key
+    def initialize(api_key=nil, official_only=nil)
+      @api_key, @official_only = api_key, official_only
       @api_key ||= CivicAide.api_key
+      @official_only ||= CivicAide.official_only
     end
 
     def get(url, query={})

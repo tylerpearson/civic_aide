@@ -38,8 +38,8 @@ Additionally, to avoid clashing with the [Array#zip Ruby method](http://apidock.
 ### Configuration
 
 ```ruby
-google_api_key = `ABCaSyD5aMsdmaXxHc7aiUyYuVXtCICV-y_PWnf5w`
-client = CivicAide::Client.new(google_api_key)
+api_key = `ABCaSyD5aMsdmaXxHc7aiUyYuVXtCICV-y_PWnf5w`
+client = CivicAide::Client.new(api_key)
 ```
 
 Alternatively, the API key can be set with global configuration and the resources can be accessed directly.
@@ -47,6 +47,14 @@ Alternatively, the API key can be set with global configuration and the resource
 ```ruby
 CivicAide.api_key = "ABCaSyD5aMsdmaXxHc7aiUyYuVXtCICV-y_PWnf5w"
 CivicAide.elections.all
+```
+
+To [receive data that is only from official state sources](https://developers.google.com/civic-information/docs/us_v1/elections/voterInfoQuery), set `CivicPage.official_sources` to `true`. By default this is set to `false`.
+
+```ruby
+CivicAide.official_sources = true
+# or
+client.official_sources = true
 ```
 
 ## Resources

@@ -16,6 +16,10 @@ describe CivicAide::Client do
       CivicAide.api_key = "AIzaSyDWJSisG_4Azd6nVJTU5gdKPiKKTCovupY"
       expect{ CivicAide::Client.new }.to_not raise_error
     end
+
+    it "defaults to false for official only" do
+      expect(@client.official_only).to eq(false)
+    end
   end
 
   describe "#new" do
@@ -99,6 +103,23 @@ describe CivicAide::Client do
 
     it "should not raise an error" do
       expect{ @client.send(:check_response_status, "success") }.to_not raise_error
+    end
+  end
+
+  describe "official only" do
+    it "should allowing toggling official_only" do
+      expect(@client.official_only).to eq(false)
+    end
+
+    it "should allowing toggling official_only" do
+      @client.official_only = true
+      expect(@client.official_only).to eq(true)
+    end
+
+    it "should have client instead of class for official_only" do
+      CivicAide.official_only = true
+      @client.official_only = false
+      expect(@client.official_only).to eq(false)
     end
   end
 

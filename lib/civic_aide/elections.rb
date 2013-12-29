@@ -14,7 +14,7 @@ module CivicAide
 
     def at(address)
       raise ElectionIdMissing, "Missing a required election id" if @election_id.nil?
-      response = client.post("/voterinfo/#{election_id}/lookup", {officialOnly: false}, {:address => address})
+      response = client.post("/voterinfo/#{election_id}/lookup", {officialOnly: @client.official_only}, {address: address})
       response.except!(:kind, :status)
     end
 

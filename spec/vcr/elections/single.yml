@@ -78,6 +78,86 @@ http_interactions:
         P. QUINN","title":"General Registrar Physical","officePhoneNumber":"7033244715","emailAddress":"cameronquinn@fairfaxcounty.gov"}]},"sources":[{"name":"Voting
         Information Project","official":true}]},"sources":[{"name":"Voting Information
         Project","official":true}]}]}'
-    http_version:
+    http_version: 
   recorded_at: Fri, 27 Dec 2013 16:20:05 GMT
+- request:
+    method: post
+    uri: https://www.googleapis.com/civicinfo/us_v1/voterinfo/4015/lookup?key=AIzaSyDWJSisG_4Azd6nVJTU5gdKPiKKTCovupY&officialOnly=true&prettyPrint=false
+    body:
+      encoding: UTF-8
+      string: '{"address":"4910 Willet Drive, Annandale, VA 22003"}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - CivicAide Ruby gem v0.0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Date:
+      - Sun, 29 Dec 2013 19:02:34 GMT
+      Etag:
+      - '"AkiRpOnd7sKoopyUaI9w1UXzdBI/vWeYnvL4AVWs9UxlTsL7NNSRt1U"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"kind":"civicinfo#voterInfoResponse","status":"success","election":{"id":"4015","name":"VA
+        State Election","electionDay":"2013-11-05"},"normalizedInput":{"line1":"4910
+        willet dr","city":"annandale","state":"VA","zip":"22003"},"contests":[{"type":"general","special":"no","office":"Governor","district":{"name":"Statewide","scope":"statewide"},"ballotPlacement":"4","candidates":[{"name":"Ken
+        T. Cuccinelli II","party":"Republican","candidateUrl":"http://www.cuccinelli.com","phone":"8047863808","email":"ken@cuccinelli.com"},{"name":"Robert
+        C. Sarvis","party":"Libertarian","candidateUrl":"http://www.robertsarvis.com","email":"info@robertsarvis.com"},{"name":"Terry
+        R. McAuliffe","party":"Democrat","candidateUrl":"http://www.terrymcauliffe.com","phone":"7038227604","email":"info@terrymcauliffe.com"}],"sources":[{"name":"Voting
+        Information Project","official":true}]},{"type":"general","special":"no","office":"Lieutenant
+        Governor","district":{"name":"Statewide","scope":"statewide"},"ballotPlacement":"5","candidates":[{"name":"Ralph
+        S. Northam","party":"Democrat","candidateUrl":"http://www.northamforlg.com","phone":"7576954188","email":"ralph@ralphnortham.com"},{"name":"E.
+        W. Jackson","party":"Republican","candidateUrl":"http://www.jacksonforlg.com","phone":"7578024246","email":"jackson@jacksonforlg.com"}],"sources":[{"name":"Voting
+        Information Project","official":true}]},{"type":"general","special":"no","office":"Attorney
+        General","district":{"name":"Statewide","scope":"statewide"},"ballotPlacement":"6","candidates":[{"name":"Mark
+        D. Obenshain","party":"Republican","candidateUrl":"http://www.markobenshain.com","phone":"5404371451","email":"campaign@markobenshain.com"},{"name":"Mark
+        R. Herring","party":"Democrat","candidateUrl":"http://www.herringforag.com","phone":"7036699090","email":"kevin@herringforag.com"}],"sources":[{"name":"Voting
+        Information Project","official":true}]},{"type":"general","special":"no","office":"Member
+        House of Delegates","district":{"name":"039","scope":"stateLower","id":"39"},"ballotPlacement":"8","candidates":[{"name":"Vivian
+        E. Watts","party":"Democrat","candidateUrl":"http://www.vivianwatts.com","phone":"7039782989","email":"vwatts@erols.com"},{"name":"Joe
+        G. Bury","party":"Republican","candidateUrl":"http://www.joebury.com","phone":"7033078221","email":"jgbury@hotmail.com"}],"sources":[{"name":"Voting
+        Information Project","official":true}]},{"type":"general","special":"no","office":"Sheriff","district":{"name":"FAIRFAX
+        COUNTY"},"ballotPlacement":"11","candidates":[{"name":"Stacey Ann Kincaid","party":"Democrat","candidateUrl":"http://staceykincaid.com","phone":"7039381658","email":"Kincaidforsheriff@gmail.com"},{"name":"Christopher
+        F. DeCarlo","party":"Independent","candidateUrl":"http://www.honestyandethics.com","phone":"7035736160","email":"cdecarlo@fairfaxpropane.com"},{"name":"Bryan
+        A. /B. A./ Wolfe","party":"Republican","candidateUrl":"http://www.wolfeforsheriff.com","phone":"7035436360","email":"fairfaxwolfe@yahoo.com"},{"name":"Robert
+        A. Rivera","party":"Independent","phone":"7039783034","email":"riveraforsheriff@gmail.com"}],"sources":[{"name":"Voting
+        Information Project","official":true}]},{"type":"Referendum","special":"no","office":"School
+        Bonds","district":{"name":"FAIRFAX COUNTY","id":"59"},"ballotPlacement":"9999","sources":[{"name":"Voting
+        Information Project","official":true}]}],"state":[{"name":"Virginia","electionAdministrationBody":{"name":"State
+        Board of Elections","electionInfoUrl":"http://www.sbe.virginia.gov/","electionRegistrationUrl":"https://www.vote.virginia.gov/","electionRegistrationConfirmationUrl":"https://www.vote.virginia.gov/","absenteeVotingInfoUrl":"http://www.sbe.virginia.gov/absenteevoting.html","votingLocationFinderUrl":"https://www.vote.virginia.gov/","ballotInfoUrl":"https://www.vote.virginia.gov/","electionRulesUrl":"http://www.sbe.virginia.gov/","physicalAddress":{"locationName":"State
+        Board of Elections","line1":"Washington Building First Floor","line2":"1100
+        Bank Street","city":"Richmond","state":"VA","zip":"23219"}},"local_jurisdiction":{"name":"FAIRFAX
+        COUNTY","electionAdministrationBody":{"name":"FAIRFAX COUNTY","electionInfoUrl":"http://www.fairfaxcounty.gov/elections","electionRegistrationUrl":"http://www.vote.virginia.gov","electionRegistrationConfirmationUrl":"http://www.vote.virginia.gov","absenteeVotingInfoUrl":"http://www.vote.virginia.gov","votingLocationFinderUrl":"http://www.vote.virginia.gov","ballotInfoUrl":"http://www.vote.virginia.gov","electionRulesUrl":"http://www.vote.virginia.gov","hoursOfOperation":"8:00
+        a.m. to 4:30 p.m Monday-Wednesday and Friday and 8:00 a.m. to 7:00 p.m. Thursday","physicalAddress":{"locationName":"FAIRFAX
+        COUNTY","line1":"OFFICE OF ELECTIONS","line2":"12000 GOVERNMENT CENTER PKWY","line3":"SUITE
+        323","city":"FAIRFAX","state":"VA","zip":"22035-0081"},"electionOfficials":[{"name":"CAMERON
+        P. QUINN","title":"General Registrar Physical","officePhoneNumber":"7033244715","emailAddress":"cameronquinn@fairfaxcounty.gov"}]},"sources":[{"name":"Voting
+        Information Project","official":true}]},"sources":[{"name":"Voting Information
+        Project","official":true}]}]}'
+    http_version: 
+  recorded_at: Sun, 29 Dec 2013 19:02:35 GMT
 recorded_with: VCR 2.5.0
