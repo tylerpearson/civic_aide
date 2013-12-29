@@ -8,6 +8,7 @@ describe CivicAide::Client do
 
   describe '.new' do
     it 'raises an error with no API key' do
+      CivicAide.api_key = nil
       expect{ CivicAide::Client.new }.to raise_error(APIKeyNotSet)
     end
 
@@ -43,7 +44,7 @@ describe CivicAide::Client do
 
   describe '#default_query' do
     it 'should have the api key' do
-      @client.send(:default_query).should == {:key => @client.api_key, :prettyPrint => false}
+      expect(@client.send(:default_query)).to eq({:key => @client.api_key, :prettyPrint => false})
     end
   end
 
@@ -56,6 +57,48 @@ describe CivicAide::Client do
   describe "#representatives" do
     it "should be the right class" do
       expect(@client.representatives).to be_an_instance_of CivicAide::Representatives
+    end
+  end
+
+  describe "#classify_error" do
+    it "should raise an error with NoAddressParameter" do
+      expect{ @client.send(:check_response_status, "noAddressParameter") }.to raise_error("NoAddressParameter")
+    end
+
+    it "should raise an error with ElectionIdMissing" do
+      expect{ @client.send(:check_response_status, "electionIdMissing") }.to raise_error("ElectionIdMissing")
+    end
+
+    it "should raise an error with NoStreetSegmentFound" do
+      expect{ @client.send(:check_response_status, "noStreetSegmentFound") }.to raise_error("NoStreetSegmentFound")
+    end
+
+    it "should raise an error with AddressUnparseable" do
+      expect{ @client.send(:check_response_status, "addressUnparseable") }.to raise_error("AddressUnparseable")
+    end
+
+    it "should raise an error with NoAddressParameter" do
+      expect{ @client.send(:check_response_status, "noAddressParameter") }.to raise_error("NoAddressParameter")
+    end
+
+    it "should raise an error with MultipleStreetSegmentsFound" do
+      expect{ @client.send(:check_response_status, "multipleStreetSegmentsFound") }.to raise_error("MultipleStreetSegmentsFound")
+    end
+
+    it "should raise an error with ElectionOver" do
+      expect{ @client.send(:check_response_status, "electionOver") }.to raise_error("ElectionOver")
+    end
+
+    it "should raise an error with ElectionUnknown" do
+      expect{ @client.send(:check_response_status, "electionUnknown") }.to raise_error("ElectionUnknown")
+    end
+
+    it "should raise an error with InternalLookupFailure" do
+      expect{ @client.send(:check_response_status, "internalLookupFailure") }.to raise_error("InternalLookupFailure")
+    end
+
+    it "should not raise an error" do
+      expect{ @client.send(:check_response_status, "success") }.to_not raise_error
     end
   end
 

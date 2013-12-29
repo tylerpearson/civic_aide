@@ -22,16 +22,6 @@ describe Hash do
 
   end
 
-  context ".except" do
-
-    it "should remove the correct item" do
-      deleted = {:one => "hello", :two => "hello"}
-      deleted = deleted.except(:two)
-      expect(deleted).to eq({:one => "hello"})
-    end
-
-  end
-
   context ".except!" do
 
     it "should remove the correct item" do

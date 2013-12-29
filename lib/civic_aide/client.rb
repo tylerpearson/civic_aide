@@ -50,7 +50,7 @@ module CivicAide
 
       def format_response(body)
         body = JSON.parse(body)
-        body.change_zip! # to prevent Array#zip clashing when rubifying the keys
+        body.change_zip! # to prevent Array#zip clashing when rubyifying the keys
         body.rubyify_keys!
         Hashie::Mash.new(body)
       end
