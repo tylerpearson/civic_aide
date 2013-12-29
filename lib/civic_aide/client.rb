@@ -4,11 +4,10 @@ require 'forwardable'
 module CivicAide
   class Client
     extend Forwardable
-
     include HTTParty
 
-    API_ENDPOINT = 'https://www.googleapis.com/civicinfo/'
-    API_VERSION = 'us_v1'
+    API_ENDPOINT = 'https://www.googleapis.com/civicinfo/'.freeze
+    API_VERSION = 'us_v1'.freeze
 
     base_uri "#{API_ENDPOINT}#{API_VERSION}"
     headers  "Content-Type" => "application/json"

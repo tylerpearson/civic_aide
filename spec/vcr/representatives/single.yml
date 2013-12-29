@@ -23,7 +23,7 @@ http_interactions:
       Expires:
       - Fri, 01 Jan 1990 00:00:00 GMT
       Date:
-      - Sat, 28 Dec 2013 06:45:05 GMT
+      - Sun, 29 Dec 2013 03:09:03 GMT
       Etag:
       - '"AkiRpOnd7sKoopyUaI9w1UXzdBI/uUqEGRPWFFqmpcAIIuYHjnGWvh8"'
       Content-Type:
@@ -101,6 +101,6 @@ http_interactions:
         456-1111","(202) 456-1414"],"urls":["http://www.whitehouse.gov/administration/president_obama/","http://www.barackobama.com/index.php"],"photoUrl":"http://www.whitehouse.gov/sites/default/files/imagecache/admin_official_lowres/administration-official/ao_image/president_official_portrait_hires.jpg","channels":[{"type":"GooglePlus","id":"110031535020051778989"},{"type":"YouTube","id":"barackobama"},{"type":"Twitter","id":"barackobama"},{"type":"Facebook","id":"barackobama"}]},"P23":{"name":"Joseph
         (Joe) Robinette Biden Jr.","address":[{"line1":"The White House","line2":"1600
         Pennsylvania Avenue NW","line3":"","city":"Washington","state":"DC","zip":"20500"}],"party":"Democrat","urls":["http://www.whitehouse.gov/administration/vice-president-biden"],"photoUrl":"http://www.whitehouse.gov/sites/default/files/imagecache/admin_official_lowres/administration-official/ao_image/vp_portrait.jpeg","channels":[{"type":"Twitter","id":"JoeBiden"},{"type":"Facebook","id":"joebiden"},{"type":"Twitter","id":"VP"}]}}}'
-    http_version:
-  recorded_at: Sat, 28 Dec 2013 06:45:05 GMT
+    http_version: 
+  recorded_at: Sun, 29 Dec 2013 03:09:04 GMT
 recorded_with: VCR 2.5.0
