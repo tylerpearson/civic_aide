@@ -38,7 +38,7 @@ Additionally, to avoid clashing with the [Array#zip Ruby method](http://apidock.
 ### Configuration
 
 ```ruby
-api_key = `ABCaSyD5aMsdmaXxHc7aiUyYuVXtCICV-y_PWnf5w`
+api_key = "ABCaSyD5aMsdmaXxHc7aiUyYuVXtCICV-y_PWnf5w"
 client = CivicAide::Client.new(api_key)
 ```
 
